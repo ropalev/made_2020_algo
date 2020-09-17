@@ -1,28 +1,29 @@
 #include 	<iostream>
 #include 	<vector>
 
-int 					main()
+int main()
 {
-	int					count;
-	int 				tmp;
-	std::vector<int> 	lst;
-
+	int count;
+	
 	std::cin >> count;
-	lst.resize(count);
-	for (int i = 0; i < count; i++){
-		std::cin >> lst[i];
+	std::vector <int> v_lst(count);
+	for (int i = 0; i < count; i++)
+	{
+		std::cin >> v_lst[i];
 	}
-	for (int i = 0; i < count; i++){
-		for (int j = i + 1; j < count; j++){
-			if (lst[i] > lst[j]){
-				tmp = lst[i];
-				lst[i] = lst[j];
-				lst[j] = tmp;
+	for (int i = 0; i < count; i++)
+	{
+		for (int j = i + 1; j < count; j++)
+		{
+			if (v_lst[i] > v_lst[j])
+			{
+				std::swap(v_lst[i],v_lst[j]);
 			}
 		}
 	}
-	for (int i = 0; i < count; i++){
-		std::cout << lst[i] << " ";
+	for (int i = 0; i < count; i++)
+	{
+		std::cout << v_lst[i] << " ";
 	}
-	return (0);
+	return 0;
 }

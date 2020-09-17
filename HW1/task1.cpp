@@ -1,20 +1,21 @@
 #include 	<iostream>
 #include 	<vector>
 
-int 		main()
+int main()
 {
-	int					count;
-	std::vector<int> 	n1;
-	std::vector<int> 	n2;
+	int count;
 
 	std::cin >> count;
-	n1.resize(count);
-	n2.resize(count);
-	for (int i = 0; i < count; i++){
-		std::cin >> n1[i];
-		std::cin >> n2[i];
+	std::vector <int> v_n1(count);
+	std::vector <int> v_n2(count);
+	for (int i = 0; i < count; i++)
+	{
+		std::cin >> v_n1[i];
+		std::cin >> v_n2[i];
 	}
-	for (int i = 0; i < count; i++){
-		std::cout << n1[i] + n2[i] << std::endl;
+	for (int i = 0; i < count; i++)
+	{
+		std::cout << v_n1[i] + v_n2[i] << std::endl;
 	}
+	return 0;
 }
