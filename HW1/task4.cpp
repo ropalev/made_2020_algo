@@ -1,7 +1,7 @@
 #include 	<iostream>
 #include 	<vector>
 
-static long long				cnt_inv;
+static long long		cnt_inv;
 
 static std::vector<int>	merge_sort(std::vector<int> lst) {
 	int					mid, start,end;
