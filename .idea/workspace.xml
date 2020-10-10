@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e692f66-5184-4327-92e3-87741a033a16" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hSIxcauo4S0VZk7Je5Gn5siPjw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e692f66-5184-4327-92e3-87741a033a16" name="Default Changelist" comment="" />
+      <created>1599998319243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599998319243</updated>
+      <workItem from="1599998322334" duration="1714000" />
+      <workItem from="1600000163639" duration="282000" />
+      <workItem from="1600004410843" duration="45000" />
+      <workItem from="1600005774815" duration="226000" />
+      <workItem from="1600162164279" duration="10965000" />
+      <workItem from="1600177878849" duration="9866000" />
+      <workItem from="1600335652102" duration="5178000" />
+      <workItem from="1600345072008" duration="733000" />
+      <workItem from="1600531702752" duration="19000" />
+      <workItem from="1600612215912" duration="2861000" />
+      <workItem from="1600706065256" duration="903000" />
+      <workItem from="1601030366081" duration="4498000" />
+      <workItem from="1601474912301" duration="6515000" />
+      <workItem from="1601540328511" duration="237000" />
+      <workItem from="1602326706755" duration="6226000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1018" y="445" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600613172796">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1018" y="445" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1600613172795" />
+    <state width="1232" height="520" key="GridCell.Tab.0.bottom" timestamp="1602333509038">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1232" height="520" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1602333509038" />
+    <state width="2518" height="470" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601042551779" />
+    <state width="1232" height="520" key="GridCell.Tab.0.center" timestamp="1602333509037">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1232" height="520" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1602333509037" />
+    <state width="2518" height="470" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601042551778" />
+    <state width="1232" height="520" key="GridCell.Tab.0.left" timestamp="1602333509036">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="381" key="GridCell.Tab.0.left/0.0.2560.1360@0.0.2560.1360" timestamp="1601484245732" />
+    <state width="1232" height="520" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1602333509036" />
+    <state width="2518" height="470" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601042551777" />
+    <state width="1232" height="520" key="GridCell.Tab.0.right" timestamp="1602333509038">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1232" height="520" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1602333509038" />
+    <state width="2518" height="470" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601042551778" />
+    <state width="1232" height="520" key="GridCell.Tab.1.bottom" timestamp="1602333509040">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1232" height="520" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1602333509040" />
+    <state width="2518" height="470" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601042551780" />
+    <state width="1232" height="520" key="GridCell.Tab.1.center" timestamp="1602333509038">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1232" height="520" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1602333509038" />
+    <state width="2518" height="470" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601042551780" />
+    <state width="1232" height="520" key="GridCell.Tab.1.left" timestamp="1602333509038">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1232" height="520" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1602333509038" />
+    <state width="2518" height="470" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601042551779" />
+    <state width="1232" height="520" key="GridCell.Tab.1.right" timestamp="1602333509039">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1232" height="520" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1602333509039" />
+    <state width="2518" height="470" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601042551780" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1600000157652">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1600000157652" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1600000157652">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1600000157652" />
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1600183275260">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1600183275260" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HW1/task1.cpp</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HW1/task3.cpp</url>
+          <line>55</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HW1/task5.cpp</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HW3/task2.cpp</url>
+          <line>72</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HW3/task2.cpp</url>
+          <line>82</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HW3/task1.cpp</url>
+          <line>45</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
