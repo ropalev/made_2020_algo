@@ -1,113 +1,86 @@
 #include <stdlib.h>
 #include <iostream>
+#include <vector>
 
-typedef struct s_node {
-	int data;
-	s_node *next;
-} t_node;
-
-typedef struct s_stack {
-  t_node *begin;
+struct Node {
+  int data;
+  Node *next;
   int min;
-  t_node *end;
-  int size;
-} t_stack;
-
-t_stack *create_stack() {
-  t_stack *stack;
-
-  if (!(stack = (t_stack *)malloc(sizeof(t_stack)))) {
-    return NULL;
-  }
-  stack->begin = NULL;
-  stack->end = NULL;
-  stack->size = 0;
-  return stack;
-}
-
-void node_create(t_stack *stack, int data) {
-  t_node *node;
-
-  if (!(node = (t_node *)malloc(sizeof(t_node)))) {
-	return;
-  }
-  node->data = data;
-  if (!stack->begin) {
-    stack->begin = node;
-    stack->min = node->data;
-    stack->end = node;
-	node->next = NULL;
-  }
-  else {
-    node->next = stack->begin;
-    stack->begin = node;
-    if (stack->min > node->data) {
-      stack->min = node->data;
-    }
-  }
-  stack->size += 1;
 };
 
-void find_min(t_stack *stack) {
-  t_node *ptr;
-
-  ptr = stack->begin;
-  while (ptr) {
-    if (ptr->data < stack->min) {
-      stack->min = ptr->data;
-    }
-    ptr = ptr->next;
-  }
-}
-
-void node_delete(t_stack *stack) {
-  t_node *ptr;
-  ptr = stack->begin;
-  if (stack->size == 1) {
-	stack->begin = NULL;
-	stack->end = NULL;
-  }
-  else {
-    stack->begin = stack->begin->next;
-    if (stack->begin->data != stack->min) {
-      stack->min = stack->begin->data;
-      find_min(stack);
-    }
-  }
-  free(ptr);
-  stack->size -= 1;
-  return ;
-}
-
-void free_stack(t_stack *stack) {
-  while (stack->size) {
-    node_delete(stack);
+class Stack {
+  Node *begin;
+  int size = 0;
+ public:
+  void push(int data) {
+	Node *node;
+	node = new Node;
+	node->data = data;
+	if (!size) {
+	  this->begin = node;
+	  this->begin->min = data;
+	  node->next = NULL;
+	}
+	else {
+	  node->next = this->begin;
+	  if (node->data < this->begin->min) {
+	    node->min = node->data;
+	  }
+	  else {
+	    node->min = this->begin->min;
+	  }
+	  this->begin = node;
+	}
+	this->size += 1;
   }
 
-}
+  void pop() {
+	Node *ptr;
+	ptr = this->begin;
+	if (this->size == 1) {
+	  this->begin = NULL;
+	}
+	else {
+	  this->begin = this->begin->next;
+	}
+	free(ptr);
+	this->size -= 1;
+	return;
+  }
 
+  int get_min() {
+    return this->begin->min;
+  }
+
+  void free_stack() {
+	while (this->size) {
+	  this->pop();
+	}
+  }
+  
+  int get_size() {
+	return size;
+  }
+};
 
 int main() {
-  t_stack *stack;
   int n, c, data;
-  stack = create_stack();
-  if (!stack) {
-    return (0);
-  }
+  Stack stack;
   std::cin >> n;
+  std::vector <int> v_res;
   for (int i = 0; i < n; i++) {
     scanf("%d", &c);
     if (c == 1) {
 	  scanf("%d", &data);
-      node_create(stack, data);
+      stack.push(data);
     }
     else if (c == 2) {
-      node_delete(stack);
+      stack.pop();
     }
     else if (c == 3) {
-      printf("%d\n", stack->min);
+	  printf("%d\n", stack.get_min());
     }
   }
-  free_stack(stack);
+  stack.free_stack();
   return (0);
 }

@@ -6,19 +6,22 @@ class Vector {
  private:
   int size = 0;
   int length = 2;
+  int start = 0;
+  int end = 0;
   int *arr = new int[length];
 
  public:
   void push_back(int data) {
-    if (this->size < this->length) {
+	if (this->size < this->length) {
 	  this->arr[this->size] = data;
-      this->size += 1;
-    }
-    else {
+	  this->size += 1;
+	}
+	else {
 	  change_length(2);
 	  this->arr[this->size] = data;
 	  this->size += 1;
-    }
+	}
+	end = (end + 1) % length;
   }
 
   int pop() {
@@ -26,6 +29,7 @@ class Vector {
 	  change_length(0.5);
 	}
 	this->size -= 1;
+	start = (start + 1) % length;
 	return this->arr[this->size];
   }
 
