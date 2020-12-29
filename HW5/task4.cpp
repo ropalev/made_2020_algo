@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 
-int SIZE = 1000;
+int SIZE = 10000;
 int A = 7;
-int PRIME = 1009;
+int PRIME = 1046527;
 
 struct Node {
   std::string key;
@@ -46,57 +46,6 @@ class Map {
 
   }
 
-  void delall(std::string key) {
-	  int i;
-	  Node *ptr;
-
-	  i = this->hash(key);
-	  ptr = &(this->arr[i]);
-	  while (this->del(key,"none", true)) {
-	  }
-  }
-  bool del(std::string key, std::string value , bool flag_all) {
-	  int i;
-	  Node *ptr;
-	  Node *next;
-	  Node *prev;
-	  Node *ss;
-
-	  i = hash(key);
-	  ss = prev = ptr = &(this->arr[i]);
-	  next = ptr->next;
-	  if (ptr->key == key && (ptr->value == value || flag_all)) {
-		  if (ptr->next) {
-			  ptr = next;
-			  this->arr[i] = *ptr;
-			  prev = ptr;
-			  if (!flag_all) {
-				  return true;
-			  }
-		  }
-		  else {
-			  this->arr[i].empty = 1;
-			  ptr = next;
-		  }
-	  }
-	  while (ptr) {
-		  if (ptr->key == key && (ptr->value == value || flag_all)) {
-			  prev->next = next;
-			  if (!flag_all) {
-				  return true;
-			  }
-		  }
-		  prev = ptr;
-		  ptr = next;
-		  if (ptr) {
-			  next = ptr->next;
-		  }
-	  }
-	  if (flag_all) {
-	  	this->arr[i].empty = 1;
-	  }
-	  return false;
-  }
 
   std::string get(std::string key) {
 	  int i, n;
@@ -124,6 +73,57 @@ class Map {
 	  }
 	  return "0";
   }
+
+  	void delall(std::string key) {
+		int n;
+		std::string str;
+
+		str = this->get(key);
+		n = str == "0" ? 0 : std::stoi(str);
+		while (n != 0) {
+			this->del(key, "flag", true);
+			n--;
+		}
+	}
+
+	void del(std::string key, std::string value, bool flag_all) {
+		int i;
+		Node *ptr;
+		Node *next;
+		Node *prev;
+
+		i = hash(key);
+		prev = ptr = &(this->arr[i]);
+		next = ptr->next;
+		if (ptr->key == key && (ptr->value == value || flag_all)) {
+			if (ptr->next) {
+				ptr = next;
+				this->arr[i] = *ptr;
+				if (!flag_all) {
+					return ;
+				}
+
+			}
+			else {
+				this->arr[i].empty = 1;
+				ptr = next;
+			}
+		}
+		while (ptr) {
+			if (ptr->key == key && (ptr->value == value || flag_all)) {
+				prev->next = next;
+				delete ptr;
+				if(!flag_all) {
+					return ;
+				}
+			}
+			prev = ptr;
+			ptr = next;
+			if (ptr) {
+				next = ptr->next;
+			}
+		}
+	}
 
   int hash(std::string key) {
 	  int res;
@@ -154,7 +154,7 @@ int main() {
 		}
 		else if (command == "delete") {
 			std::cin >> key >> value;
-			my_map.del(key, value, false);
+			my_map.del(key, value,false);
 		}
 		else if (command == "deleteall") {
 			std::cin >> key;
@@ -163,11 +163,3 @@ int main() {
 	}
 	return (0);
 }
-
-/*
- * put 1 a
-put 1 a
-put 1 b
-put 1 c
-deleteall 1
- */

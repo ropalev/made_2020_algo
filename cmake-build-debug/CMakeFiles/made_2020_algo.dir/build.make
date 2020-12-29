@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /snap/clion/137/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /snap/clion/137/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lvania/CLionProjects/made_2020_algo
+CMAKE_SOURCE_DIR = /home/roman/ClionProjects/made_2020_algo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lvania/CLionProjects/made_2020_algo/cmake-build-debug
+CMAKE_BINARY_DIR = /home/roman/ClionProjects/made_2020_algo/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/made_2020_algo.dir/depend.make
@@ -77,30 +77,30 @@ include CMakeFiles/made_2020_algo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/made_2020_algo.dir/flags.make
 
-CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.o: CMakeFiles/made_2020_algo.dir/flags.make
-CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.o: ../HW4/task1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lvania/CLionProjects/made_2020_algo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.o -c /Users/lvania/CLionProjects/made_2020_algo/HW4/task1.cpp
+CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.o: CMakeFiles/made_2020_algo.dir/flags.make
+CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.o: ../HW14/task5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/ClionProjects/made_2020_algo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.o -c /home/roman/ClionProjects/made_2020_algo/HW14/task5.cpp
 
-CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lvania/CLionProjects/made_2020_algo/HW4/task1.cpp > CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.i
+CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/ClionProjects/made_2020_algo/HW14/task5.cpp > CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.i
 
-CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lvania/CLionProjects/made_2020_algo/HW4/task1.cpp -o CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.s
+CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/ClionProjects/made_2020_algo/HW14/task5.cpp -o CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.s
 
 # Object files for target made_2020_algo
 made_2020_algo_OBJECTS = \
-"CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.o"
+"CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.o"
 
 # External object files for target made_2020_algo
 made_2020_algo_EXTERNAL_OBJECTS =
 
-made_2020_algo: CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.o
+made_2020_algo: CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.o
 made_2020_algo: CMakeFiles/made_2020_algo.dir/build.make
 made_2020_algo: CMakeFiles/made_2020_algo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lvania/CLionProjects/made_2020_algo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable made_2020_algo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roman/ClionProjects/made_2020_algo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable made_2020_algo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/made_2020_algo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -113,6 +113,6 @@ CMakeFiles/made_2020_algo.dir/clean:
 .PHONY : CMakeFiles/made_2020_algo.dir/clean
 
 CMakeFiles/made_2020_algo.dir/depend:
-	cd /Users/lvania/CLionProjects/made_2020_algo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lvania/CLionProjects/made_2020_algo /Users/lvania/CLionProjects/made_2020_algo /Users/lvania/CLionProjects/made_2020_algo/cmake-build-debug /Users/lvania/CLionProjects/made_2020_algo/cmake-build-debug /Users/lvania/CLionProjects/made_2020_algo/cmake-build-debug/CMakeFiles/made_2020_algo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roman/ClionProjects/made_2020_algo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roman/ClionProjects/made_2020_algo /home/roman/ClionProjects/made_2020_algo /home/roman/ClionProjects/made_2020_algo/cmake-build-debug /home/roman/ClionProjects/made_2020_algo/cmake-build-debug /home/roman/ClionProjects/made_2020_algo/cmake-build-debug/CMakeFiles/made_2020_algo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/made_2020_algo.dir/depend
 

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lvania/CLionProjects/made_2020_algo/HW4/task1.cpp" "/Users/lvania/CLionProjects/made_2020_algo/cmake-build-debug/CMakeFiles/made_2020_algo.dir/HW4/task1.cpp.o"
+  "/home/roman/ClionProjects/made_2020_algo/HW14/task5.cpp" "/home/roman/ClionProjects/made_2020_algo/cmake-build-debug/CMakeFiles/made_2020_algo.dir/HW14/task5.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

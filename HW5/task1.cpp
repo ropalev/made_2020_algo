@@ -1,32 +1,42 @@
 #include <iostream>
 #include <string>
 
-int SIZE = 10e6;
+int SIZE = 10e5;
 int A = 7;
 int PRIME = 1046527;
 struct Node {
   int value;
-  int empty = 1;
-  int rip = 0;
+  int empty;
+  int rip;
 };
 
 class Set {
  private:
-  Node *arr = new Node[SIZE];
+  Node **arr;
 
-  bool exists(int value, int &i) {
+	bool exists(int value, int &i) {
 
-	  i = this->hash(value);
-	  while (!this->arr[i % SIZE].empty) {
-		  if (this->arr[i % SIZE].value == value && this->arr[i % SIZE].rip == 0) {
-			  return (true);
+		i = this->hash(value);
+		while (!this->arr[i % SIZE]->empty) {
+			if (this->arr[i % SIZE]->value == value && this->arr[i % SIZE]->rip == 0) {
+				return (true);
+			}
+			i++;
+		}
+		return (false);
+	}
+
+  public:
+	  Set() {
+		  this->arr = (Node**)malloc(sizeof(Node*) * SIZE);
+		  for (int i = 0; i < SIZE; i++) {
+			this->arr[i] = (Node *)malloc(sizeof(Node));
+			this->arr[i]->empty = 1;
+			this->arr[i]->rip = 0;
 		  }
-		  i++;
 	  }
-	  return (false);
-  }
 
- public:
+
   void insert (int value) {
 	  int i;
 
@@ -34,8 +44,8 @@ class Set {
 	  if (exists(value, (int &) i)) {
 		  return;
 	  }
-	  this->arr[i % SIZE].value = value;
-	  this->arr[i % SIZE].empty = 0;
+	  this->arr[i % SIZE]->value = value;
+	  this->arr[i % SIZE]->empty = 0;
   }
   void del (int value) {
   	int i;
@@ -43,7 +53,7 @@ class Set {
 	  if (!exists(value, (int &) i)) {
 		  return;
 	  }
-	  this->arr[i % SIZE].rip = 1;
+	  this->arr[i % SIZE]->rip = 1;
   }
 
   bool exists(int value) {
@@ -60,7 +70,7 @@ class Set {
 
 
 int main() {
-	Set my_set;
+	Set my_set = Set();
 	int value;
 
 	std::string str;
